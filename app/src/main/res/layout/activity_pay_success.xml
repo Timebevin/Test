@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/back_view"
+        layout="@layout/layout_common_color_header"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:src="@drawable/pay_succ_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="恭喜您，订单支付成功！"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pay_number_tv"
+            tools:text="订单编号:25115511515"
+            android:textSize="12sp"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pay_type_tv"
+            tools:text="支付方式：微信支付"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pay_price_tv"
+            tools:text="支付金额:100.0"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pay_time_tv"
+            tools:text="支付时间:2019-4-21 22:24"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zt.school.views.MyTextView
+            android:id="@+id/go_home_tv"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="返回首页"
+            android:textColor="@color/white"
+            app:pressColor="@color/pay_succ_color_press"
+            app:normalColor="@color/pay_succ_color"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+        <com.zt.school.views.MyTextView
+            android:id="@+id/go_detail_tv"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/white"
+            app:pressColor="@color/color_pink_red_p"
+            app:normalColor="@color/color_hong"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</LinearLayout>

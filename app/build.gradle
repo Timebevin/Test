@@ -1,0 +1,175 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    signingConfigs {
+        signingconfig {
+            keyAlias 'mt'
+            keyPassword 'android'
+            storeFile file('C:\\Users\\nq_wu\\Desktop\\school_wm\\app\\src\\main\\assets\\mt.jks')
+            storePassword 'android'
+        }
+    }
+    compileOptions{
+        compileOptions {
+            //加入下面这两句就好了
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    
+    defaultConfig {
+        applicationId "com.zt.mt"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 9
+        versionName "1.6.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+    }
+    
+    buildTypes{
+        release{
+            minifyEnabled false
+            signingConfig signingConfigs.signingconfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.signingconfig
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    repositories{
+        flatDir{
+            dirs'libs'
+        }
+    }
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        //Bmob的maven仓库地址--必填
+        maven {url "https://raw.github.com/bmob/bmob-android-sdk/master"}
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //动态权限申请库
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
+
+    //butterknife注解库
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //沉浸式状态栏依赖
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+
+    //侧滑库
+    implementation 'cn.bingoogolapple:bga-swipebacklayout:1.2.0'
+
+    //banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //仿ios弹窗
+    implementation 'com.kongzue.dialog:dialog:2.4.8.1'
+
+    //1.1.0 （1.0.5及以前版本的老用户升级需谨慎，API改动过大,适配Android P(9.0系统)）
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-21'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    //network request library
+    implementation 'com.lzy.net:okgo:3.0.4'
+
+    //方法数超过65536
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //圆角矩形图片形状库
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //圆角Tv
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+
+    //Glide 图片下载
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+
+    //高德地图sdk
+    implementation 'com.amap.api:3dmap:5.0.0'
+    implementation 'com.amap.api:location:3.3.0'
+    implementation 'com.amap.api:search:5.0.0'
+
+    //banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //PickerView
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+
+    //星星
+    implementation 'me.zhanghai.android.materialratingbar:library:1.2.0'
+
+    //相册库
+    implementation 'com.longsh:PhotoPicker:1.5.0'
+
+    //底部弹出式对话框(需依赖于design库)
+    implementation 'com.flipboard:bottomsheet-core:1.5.1'
+
+    //An Android TabLayout Lib
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //带头部的ListView
+    implementation 'se.emilsjolander:stickylistheaders:2.7.0'
+
+    //高德地图sdk
+    implementation 'com.amap.api:3dmap:5.1.0'
+    implementation 'com.amap.api:location:3.3.0'
+    implementation 'com.amap.api:search:5.0.0'
+
+    //Bmob SDK
+    //implementation 'cn.bmob.android:bmob-sdk:3.6.9'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.squareup.okio:okio:2.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation files('libs/uk-co-senab-photoview.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+
+    //video player
+    implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation(name: 'paysdk-release-1.2.4', ext: 'aar')
+
+    //paysdk-release-1.2.4(sdk 名称)
+
+    //pmd
+    implementation 'com.gongwen:marqueelibrary:1.1.2'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    //二维码
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+
+    //微信支付/登录sdk
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
+    //腾讯QQ登录、支付、社交sdk
+    implementation files('libs/open_sdk_r6008_lite.jar')
+    implementation fileTree(dir: 'libs\\3.6.9', include: ['*.aar', '*.jar'], exclude: [])
+}
+

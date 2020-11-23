@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:scaleType="centerCrop"
+            android:background="@color/divider_color"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <RelativeLayout
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/name"
+                tools:text="菜品名称"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/tv_b_gray_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cate"
+                tools:text="菜品分类"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/tv_b_gray_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/price"
+                tools:text="5.5"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/color_hong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

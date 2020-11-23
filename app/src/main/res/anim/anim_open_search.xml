@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 渐变透明的动画效果 -->
+    <!--
+        fromAlpha 动画起始透明的 0.0完全透明
+        toAlpha 动画结束时透明的 1.0完全不透明
+        startOffset 设置启动时间
+        duration 属性动画持续时间
+    -->
+    <alpha
+        android:fromAlpha="0.99"
+        android:toAlpha="1.0"
+        android:startOffset="300"
+        android:duration="500"
+        />
+</set>

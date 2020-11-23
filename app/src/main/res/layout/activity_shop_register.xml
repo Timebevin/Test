@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_white_header"/>
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="商家头像:"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.zt.school.views.CircleImageView
+                    android:id="@+id/id_logo_iv"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/tx"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="商家名称:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/name"
+                    android:hint="商家名称"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="商家分类:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/id_shop_cate_tv"
+                    android:hint="点击选择"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="商家简介:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/desc"
+                    android:hint="商家简介"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="掌柜姓名:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/zg_name"
+                    android:hint="掌柜姓名"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="联系电话:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/tel"
+                    android:hint="联系电话"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="详细地址:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address"
+                    android:hint="点击选择商家地址"
+                    android:textSize="15sp"
+                    android:textColor="@color/tv_b_gray_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="密码:"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="密码:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/pass"
+                    android:hint="密码"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="重复密码:"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/repass"
+                    android:hint="重复密码"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+            <com.zt.school.views.MyTextView
+                android:id="@+id/register"
+                android:text="注册"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

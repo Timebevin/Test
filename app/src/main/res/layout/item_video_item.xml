@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/id_iv"
+            android:background="@mipmap/ds_bj"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.zt.school.views.CustomJzVideo
+                android:id="@+id/videoplayer"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/id_video_title_tv"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/tv_b_gray_color"
+        tools:text="我是标题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/divider_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zt.school.views.CircleImageView
+            android:src="@mipmap/logo"
+            android:id="@+id/logo_iv"
+            android:layout_centerVertical="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/id_name_tv"
+            android:layout_toRightOf="@+id/logo_iv"
+            android:layout_toLeftOf="@+id/zang"
+            android:ellipsize="end"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            tools:text="ZT"
+            android:textSize="13sp"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/zang"
+            android:layout_toLeftOf="@+id/common_tv"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/zang_n"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/zang_tv"
+                android:text="0"
+                android:textSize="11sp"
+                android:textColor="@color/tv_b_gray_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+      <LinearLayout
+          android:id="@+id/common_tv"
+          android:orientation="vertical"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:src="@mipmap/common"
+              android:layout_width="20dp"
+              android:layout_height="20dp" />
+          <TextView
+              android:id="@+id/comment_tv"
+              android:text="0"
+              android:textSize="11sp"
+              android:textColor="@color/tv_b_gray_color"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

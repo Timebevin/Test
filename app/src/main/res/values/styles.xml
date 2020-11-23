@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--
+        去除Activity继承于AppCompatActivity时的ActionBar
+        -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- 闪屏页背景style-->
+    <style name="MyAppTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+    </style>
+    <style name="StartTheme" parent="MyAppTheme">
+        <item name="android:windowBackground">@mipmap/mt_splash</item>
+    </style>
+    <style name="FullScreenStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="bottom_radio_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/radio_tab_text_selector</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="bottom_radio_video_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/radio_tab_text_video_selector</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <declare-styleable name="myTextView">
+        <attr name="normalColor" format="reference|color"/>
+        <attr name="pressColor" format="reference|color"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <!--相册库style-->
+    <style name="PhotoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/actionBarTheme</item>
+        <!--设置图片选择界面标题栏以及底栏颜色-->
+        <item name="colorPrimary">#38393E</item>
+        <!--设置图片选择界面状态栏颜色-->
+        <item name="colorPrimaryDark">#2F3034</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+
+    <!--弹出对话框-->
+    <style name="LocatonDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <!-- dialog动画 -->
+    <style name="style_dialog">
+        <item name="android:windowEnterAnimation">@anim/anim_popup_zoom_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_popup_zoom_exit</item>
+    </style>
+
+    <!-- fly商家弹框缩放动画 -->
+    <style name="DialogScaleAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+</resources>

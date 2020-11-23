@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/b_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="选择支付方式"
+        android:textSize="11sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/tv_b_gray_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/pay_wx"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.zt.school.views.MyTextView
+                android:text="微信支付"
+                android:textSize="11sp"
+                app:normalColor="@color/white"
+                app:pressColor="@color/white"
+                app:radius="0dp"
+                android:clickable="true"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/tv_b_gray_color"
+                android:drawableLeft="@mipmap/jd_zf_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/id_wx_iv"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/radio_icon_check"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+        <View
+            android:background="@color/divider_color"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:id="@+id/pay_zfb"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.zt.school.views.MyTextView
+                android:text="支付宝支付"
+                android:textSize="11sp"
+                app:normalColor="@color/white"
+                app:pressColor="@color/white"
+                app:radius="0dp"
+                android:clickable="false"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/tv_b_gray_color"
+                android:drawableLeft="@mipmap/jd_zf_zfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/id_zfb_iv"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/radio_icon_normal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

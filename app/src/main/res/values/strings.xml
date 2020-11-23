@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">校园外卖</string>
+    <string name="radio_tv_ysa">首页</string>
+    <string name="radio_tv_fj">商家</string>
+    <string name="radio_tv_video">Video</string>
+    <string name="radio_tv_order">订单</string>
+    <string name="radio_tv_mine">我的</string>
+    <string name="index_search_msg">搜一搜商家关键字</string>
+    <string name="search_shop_msg">请输入商家搜索关键字</string>
+    <string name="default_motto">早睡身体好，睡前别吃太饱</string>
+</resources>

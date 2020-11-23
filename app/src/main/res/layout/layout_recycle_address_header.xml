@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/id_address_rl"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/id_local"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mclz_daohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_toRightOf="@+id/id_local"
+                android:layout_toLeftOf="@+id/id_right_iv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lxr_tv"
+                    android:text="联系人 130000000000"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="11sp"
+                    android:textColor="@color/tv_b_gray_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:text="地址"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="11sp"
+                    android:textColor="@color/tv_gray_color"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="点击修改地址"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_orign"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/id_right_iv"
+                android:src="@mipmap/right_icon"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_edit_address_rl"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/color_orign"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:text="点击添加收货地址"
+                android:textSize="12sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

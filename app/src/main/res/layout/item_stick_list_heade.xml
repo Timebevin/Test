@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/item_press_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/line"
+        android:background="#03A9F4"
+        android:layout_centerVertical="true"
+        android:layout_width="3dp"
+        android:layout_height="14dp"/>
+    <TextView
+        android:id="@+id/id_stick_header_title"
+        android:layout_toRightOf="@+id/line"
+        tools:text="标题"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_orign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

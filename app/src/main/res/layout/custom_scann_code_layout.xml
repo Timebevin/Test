@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--根布局为一个幁布局，该FrameLayout为扫码view-->
+    <FrameLayout
+        android:id="@+id/fl_my_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+
+    <!--需要添加的布局ui控件-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/id_custom_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:id="@+id/back_colse_view"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:src="@mipmap/white_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:text="扫描二维码/条形码"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <!--
+            占位扫描框界面
+        -->
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="230dp"
+                android:layout_height="230dp"/>
+            <TextView
+                android:text="取景框对准二维码,即可自动扫描"
+                android:layout_gravity="center"
+                android:textSize="11sp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/divider_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:background="#AA333333"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/custom_light_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/sgd_normal"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="闪光灯"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/custom_xc_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/xc"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="从相册"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

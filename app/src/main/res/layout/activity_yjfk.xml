@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_white_header"/>
+    <View
+        android:background="@color/divider_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="联系方式："
+                android:textSize="12sp"
+                android:textColor="@color/tv_b_gray_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_add_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/msg_cntancet"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/tv_b_gray_color"
+                    android:textSize="12sp"
+                    android:hint="手机/QQ/微信"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <TextView
+                android:text="反馈内容："
+                android:textSize="12sp"
+                android:textColor="@color/tv_b_gray_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_add_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/msg_edit"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textColor="@color/tv_b_gray_color"
+                    android:textSize="12sp"
+                    android:hint="bug反馈/功能建议/优化改善..."
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+            <com.zt.school.views.MyTextView
+                android:id="@+id/commit_tv"
+                android:text="提交"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:normalColor="@color/register_statue_bar_color"
+                app:pressColor="@color/register_btn_press_color"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--注意：此文件必须用到，在自定义扫描界面时-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!--
+     "inner_width" format="dimension" 控制扫描框的宽度
+    "inner_height" format="dimension"控制扫描框的高度
+    "inner_margintop" format="dimension"  控制扫描框距离顶部的距离
+    "inner_corner_color" format="color" 控制扫描框四角的颜色
+    "inner_corner_length" format="dimension" 控制扫描框四角的长度
+    "inner_corner_width" format="dimension" 控制扫描框四角的宽度
+    "inner_scan_bitmap" format="reference" 控制扫描图
+    "inner_scan_speed" format="integer" 控制扫描速度
+    "inner_scan_iscircle" format="boolean" 控制小圆点是否展示
+    -->
+
+        <com.uuzuche.lib_zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:inner_width="230dp"
+            app:inner_height="230dp"
+            android:layout_gravity="center"
+            app:inner_corner_length="20dp"
+            app:inner_corner_width="2dp"
+            app:inner_corner_color="#f00"
+            app:inner_scan_speed="25"
+            app:inner_scan_iscircle="false"
+            />
+</FrameLayout>

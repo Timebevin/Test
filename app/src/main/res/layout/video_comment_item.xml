@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zt.school.views.CircleImageView
+            android:id="@+id/logo_iv"
+            android:src="@mipmap/logo"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/user_name_tv"
+            tools:text="ZT"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/logo_iv"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time_tv"
+            android:textSize="11sp"
+            tools:text="2019-5-21 12:57:00"
+            android:textColor="@color/tv_gray_color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/content_tv"
+        tools:text="我是评论内容"
+        android:textSize="13sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

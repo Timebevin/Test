@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_above="@+id/id_tv_qd"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:background="@color/text_center_tab_selected"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:id="@+id/back_colse_view"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/id_base_back_iv"
+                    android:src="@mipmap/white_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/id_base_title_tv"
+                android:text="商家位置选择"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/divider_color"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+        </RelativeLayout>
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"/>
+        <TextView
+            android:id="@+id/tv"
+            tools:text="选择的位置"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.zt.school.views.MyTextView
+        android:id="@+id/id_tv_qd"
+        android:text="确定"
+        android:gravity="center"
+        android:textSize="12sp"
+        app:normalColor="@color/text_center_tab_selected"
+        app:pressColor="@color/register_btn_press_color"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_bottomsheetlayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/root_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="我的订单"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/tv_b_gray_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/slidingTablayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            tl:tl_textsize="12sp"
+            tl:tl_textBold="SELECT"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textUnselectColor="@color/tv_gray_color"
+            tl:tl_textSelectColor="@color/color_pink_red"
+            tl:tl_indicator_color="@color/color_pink_red"
+            tl:tl_indicator_corner_radius="0.5dp"
+            tl:tl_indicator_height="1.5dp"
+            tl:tl_indicator_width="40dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:paddingTop="4dp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>

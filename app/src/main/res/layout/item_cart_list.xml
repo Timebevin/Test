@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/id_cart_item_food_iv"
+        android:scaleType="fitXY"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/id_cart_item_food_iv"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/id_cart_item_food_name"
+                android:text="米线"
+                android:textSize="11sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/id_cart_item_food_price"
+                android:text="¥0"
+                android:textColor="@android:color/black"
+                android:alpha="0.8"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/id_cart_item_food_count"
+            android:text="x 1"
+            android:textColor="@android:color/black"
+            android:alpha="0.5"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

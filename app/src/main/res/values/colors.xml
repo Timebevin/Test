@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent_p">#c25c7e</color>
+
+    <color name="text_tab_selected">#3C4AD7</color>
+    <color name="text_tab_normal">#666666</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    
+    <color name="tab_city_color">#3C4AD7</color>
+    <color name="tab_shop_color">#E42154</color>
+    <color name="tab_area_color">#1BBE74</color>
+    <color name="tab_green_press_color">#208456</color>
+    <color name="def_color">#fff0f0f0</color>
+    <color name="divider_color">#eeeeee</color>
+    <color name="search_border_color">#E5E5E5</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_hong">#E83651</color>
+    <color name="color_pink_red">#E42154</color>
+    <color name="color_pink_red_p">#99344e</color>
+    <color name="shop_top_back_color">#23374f</color>
+
+    <color name="drop_down_selected">#4C4C4C</color>
+    <color name="drop_down_unselected">#a7a7a8</color>
+    <color name="un_press_color">#9C27B0</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#f9f9f9</color>
+    <color name="b_gray">#f9f9f9</color>
+    <color name="color_jq">#9000</color>
+    <color name="color_jq_t">#3010</color>
+    <color name="yellow_tint">#f9f9f9</color>
+    <color name="color_pink">#e495f1</color>
+    <color name="register_statue_bar_color">#3C4AD7</color>
+    <color name="register_btn_press_color">#535ecc</color>
+
+    <color name="tint">#f5cc42</color>FFF4DC
+    <color name="dang_color">#FAF3DA</color>
+    <color name="color_1">#fae9c6</color>
+    <color name="color_2">#FFF4DC</color>
+    <color name="color_g">#F5F5F5</color>
+    <color name="tv_b_gray_color">#4C4C4C</color>
+    <color name="tv_gray_color">#a7a7a8</color>
+    <color name="tv_orange_color">#F88A40</color>
+    <color name="item_normal_color">#ffffff</color>
+    <color name="item_press_color">#f9f9f9</color>
+    <color name="b_gray_color">#f1f1f1</color>
+    <color name="aty_gray_color">#F0F0F0</color>
+    <color name="img_statue_bar_color">#191a19</color>
+    <color name="color_orign">#F47A46</color>
+    <color name="n_color">#b3b1b1</color>
+    <color name="color_normal_tv_color">#fff</color>
+    <color name="color_press_tv_color">#4a65ec</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="red_select_color">#DA4A4A</color>
+    <color name="normal_select_color">#666666</color>
+    <color name="text_center_tab_selected">#5227BE</color>
+    <color name="color_green">#00ff00</color>
+    <color name="pay_succ_color">#3fc4b0</color>
+    <color name="pay_succ_color_press">#1a9b87</color>
+</resources>

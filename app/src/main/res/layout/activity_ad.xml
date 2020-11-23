@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/id_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/id_count_tv"
+        android:text="跳过"
+        android:textSize="10sp"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        app:rv_backgroundColor="#9000"
+        app:rv_backgroundPressColor="@color/gray"
+        app:rv_textPressColor="@color/white"
+        app:rv_strokeWidth="0.5dp"
+        app:rv_cornerRadius="13dp"
+        app:rv_isRippleEnable="true"
+        />
+</RelativeLayout>

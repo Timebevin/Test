@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_img_detail_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/img_statue_bar_color"
+        />
+    <RelativeLayout
+        android:id="@+id/id_img_detail_topview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <LinearLayout
+            android:id="@+id/back_colse_view"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/white_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/id_img_detail_title"
+            android:text="图片详情"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/id_img_detail_count"
+        android:text="0/0"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

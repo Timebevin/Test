@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/shape_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="发现新版本"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_press_tv_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/color_press_tv_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+        <ListView
+            android:id="@+id/listview"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.zt.school.views.MyTextView
+                android:id="@+id/id_ignore_tv"
+                android:text="下次再说"
+                android:gravity="center"
+                android:textSize="12sp"
+                app:normalColor="#a7a7a8"
+                app:pressColor="#c5c5c6"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <com.zt.school.views.MyTextView
+                android:id="@+id/id_update_tv"
+                android:text="立即更新"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:normalColor="@color/color_pink_red"
+                app:pressColor="@color/color_pink_red_p"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

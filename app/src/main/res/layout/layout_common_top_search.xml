@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white_color"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/back_colse_view"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/black_left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_search_linear"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_search_two"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+            <ImageView
+                android:src="@mipmap/search"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/id_search_edit"
+                android:background="@null"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:imeOptions="actionSearch"
+                android:textColor="@android:color/black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:hint="@string/search_shop_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_color"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</RelativeLayout>

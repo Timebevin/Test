@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.zt.school.views.CircleImageView
+            android:id="@+id/id_commen_profile_image"
+            android:src="@mipmap/logo"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_overlay="false"
+            />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/id_commen_nickname"
+                        tools:text="用户昵称"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="评分"
+                                android:textSize="10sp"
+                                android:textColor="@color/tv_gray_color"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/id_ratingbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="-3dp"
+                                android:minHeight="13dp"
+                                android:minWidth="13dp"
+                                android:rating="0.0"
+                                android:isIndicator="true"
+                                android:indeterminateDrawable="@null"
+                                app:mrb_progressTint="@color/tint"
+                                app:mrb_secondaryProgressTint="@color/tint"
+                                />
+                            <TextView
+                                android:id="@+id/id_commen_xin_count"
+                                android:text="0.0"
+                                android:textSize="9sp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/tint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/id_commen_time"
+                            tools:text="2017-12-30"
+                            android:textSize="10sp"
+                            android:alpha="0.5"
+                            android:textColor="#999999"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            <TextView
+                android:id="@+id/id_commen_body"
+                tools:text="评论内容"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.zt.school.views.CustomGridView
+                android:id="@+id/girdview"
+                android:scrollbars="none"
+                android:numColumns="4"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
