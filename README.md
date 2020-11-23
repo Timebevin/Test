@@ -1,4 +1,3 @@
-# Test
-练习项目'\n'
-首页
-![image](https://github.com/Timebevin/Image/Image/1.png?raw=true)
+
+### 练习项目
+![image](http://42.192.85.188:8081/image/img/1.png)
